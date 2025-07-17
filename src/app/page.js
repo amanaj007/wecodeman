@@ -5,91 +5,46 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+        <section style={{ textAlign: 'center' }}>
+          
+          <h1>Aman Jaiswal</h1>
+          <p>Front-End Developer (Vue.js/React.js)</p>
+          <p>Location: Korba, Chhattisgarh, India</p>
+          <p>
+            <a href="mailto:aj007.12@gmail.com">aj007.12@gmail.com</a>          </p>
+          <p>
+            <a target="_blank" href="https://www.linkedin.com/in/amanaj/">LinkedIn</a> | <a target="_blank" href="https://github.com/amanaj007">GitHub</a> | <a target="_blank" href="https://leetcode.com/user4539vs/">Leetcode</a>
+          </p>
+        </section>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
+        {/* Summary */}
+        <section style={{ textAlign: 'center', margin: '0 auto', width: '50%' }}>
+          <h2>About Me</h2>
+          <p>
+            Passionate front-end developer with 5+ years of experience building responsive, user-focused web applications. Adept at optimizing performance, collaborating with cross-functional teams, and delivering intuitive UI experiences.
+          </p>
+        </section>
+
+        {/* Key Skills */}
+        <section style={{ textAlign: 'center'}}>
+          <h2>Technical Skills</h2>
+          <ul style={{ listStyle: 'none' }}>
+            <li><b>Languages:</b> JavaScript (ES6+), HTML5, CSS3</li>
+            <li><b>Frameworks:</b> Vue.js, React.js, Next.js, Nuxt.js, Express.js, Tailwind CSS, Vuetify</li>
+            <li><b>State Management:</b> Vuex, Pinia, Redux</li>
+            <li><b>Backend & DB:</b> Node.js, MongoDB, MySQL, Mongoose</li>
+            <li><b>Tools:</b> Visual Studio Code, Git, Gitlab, Jira, BitBucket</li>
+          </ul>
+        </section>
+
+        {/* Quick Links */}
+        <section style={{ textAlign: 'center' }}>
+          <h2>Quick Links</h2>
+          <nav>
+            <a href="/about">About</a> | <a href="/projects">Projects</a> | <a href="/skills">Skills</a> | <a href="/contact">Contact</a>
+          </nav>
+        </section>
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
