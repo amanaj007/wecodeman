@@ -1,4 +1,6 @@
 .page {
+  background: #09090b;
+  color: #fff;
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
@@ -32,6 +34,7 @@
   flex-direction: column;
   gap: 32px;
   grid-row-start: 2;
+  color: #fff;
 }
 
 .main ol {
