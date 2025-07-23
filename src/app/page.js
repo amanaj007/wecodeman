@@ -1,10 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import ProjectsSection from "./components/ProjectsSection";
+import SkillsSection from "./components/SkillsSection";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
+      <main className={styles.main} style={{ width: '70%' }}>
         <section style={{ textAlign: 'center' }}>
           
           <h1>Aman Jaiswal</h1>
@@ -18,14 +20,14 @@ export default function Home() {
         </section>
 
         {/* Summary */}
-        <section style={{ textAlign: 'center', margin: '0 auto', width: '50%' }}>
+        <section style={{ textAlign: 'center', margin: '0 auto' }}>
           <h2>About Me</h2>
           <p>
             Passionate front-end developer with 5+ years of experience building responsive, user-focused web applications. Adept at optimizing performance, collaborating with cross-functional teams, and delivering intuitive UI experiences.
           </p>
         </section>
 
-        {/* Key Skills */}
+        {/* Technical Skills */}
         <section style={{ textAlign: 'center'}}>
           <h2>Technical Skills</h2>
           <ul style={{ listStyle: 'none' }}>
@@ -37,12 +39,60 @@ export default function Home() {
           </ul>
         </section>
 
+        <ProjectsSection />
+        <SkillsSection />
+
         {/* Quick Links */}
         <section style={{ textAlign: 'center' }}>
           <h2>Quick Links</h2>
           <nav>
             <a href="/about">About</a> | <a href="/projects">Projects</a> | <a href="/skills">Skills</a> | <a href="/contact">Contact</a>
           </nav>
+        </section>
+
+        {/* Experience */}
+        <section style={{ textAlign: 'center', marginTop: 40 }}>
+          <h2>Experience</h2>
+          <ul style={{ listStyle: 'none', padding: 0 }}>
+            <li>
+              <b>Front-End Developer</b> at Example Company<br />
+              Jan 2020 – Present<br />
+              <i>Worked on modern web applications using React and Vue.js.</i>
+            </li>
+          </ul>
+        </section>
+
+        {/* Education */}
+        <section style={{ textAlign: 'center', marginTop: 40 }}>
+          <h2>Education</h2>
+          <ul style={{ listStyle: 'none', padding: 0 }}>
+            <li>
+              <b>Bachelor of Technology in Computer Science</b><br />
+              Example University, 2015 – 2019
+            </li>
+          </ul>
+        </section>
+
+        {/* Certifications */}
+        <section style={{ textAlign: 'center', marginTop: 40 }}>
+          <h2>Certifications</h2>
+          <ul style={{ listStyle: 'none', padding: 0 }}>
+            <li>
+              <b>Certified JavaScript Developer</b> – Example Certifying Authority, 2021
+            </li>
+          </ul>
+        </section>
+
+        {/* Contact */}
+        <section style={{ textAlign: 'center', marginTop: 40, marginBottom: 40 }}>
+          <h2>Contact</h2>
+          <p>You can reach me at <a href="mailto:your@email.com">your@email.com</a> or fill out the form below (dummy form):</p>
+          <form style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1rem', maxWidth: 400, marginLeft: 'auto', marginRight: 'auto' }}>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows={4} required />
+            <button type="submit" disabled>Send (disabled)</button>
+          </form>
         </section>
       </main>
     </div>
