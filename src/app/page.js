@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main} style={{ width: '70%' }}>
-        <section style={{ textAlign: 'center' }}>
+        <section style={{ textAlign: 'center', paddingTop: 40 }}>
           
           <h1>Aman Jaiswal</h1>
           <p>Front-End Developer (Vue.js/React.js)</p>
@@ -20,7 +20,7 @@ export default function Home() {
         </section>
 
         {/* Summary */}
-        <section style={{ textAlign: 'center', margin: '0 auto' }}>
+        <section style={{ textAlign: 'center', margin: '0 auto', borderTop: '2px solid #fff', paddingTop: 40 }}>
           <h2>About Me</h2>
           <p>
             Passionate front-end developer with 5+ years of experience building responsive, user-focused web applications. Adept at optimizing performance, collaborating with cross-functional teams, and delivering intuitive UI experiences.
@@ -28,7 +28,7 @@ export default function Home() {
         </section>
 
         {/* Technical Skills */}
-        <section style={{ textAlign: 'center'}}>
+        <section style={{ textAlign: 'center', borderTop: '2px solid #fff', paddingTop: 40 }}>
           <h2>Technical Skills</h2>
           <ul style={{ listStyle: 'none' }}>
             <li><b>Languages:</b> JavaScript (ES6+), HTML5, CSS3</li>
@@ -39,11 +39,11 @@ export default function Home() {
           </ul>
         </section>
 
-        <ProjectsSection />
-        <SkillsSection />
+        <ProjectsSection style={{ borderTop: '2px solid #fff', paddingTop: 40 }} />
+        <SkillsSection style={{ borderTop: '2px solid #fff', paddingTop: 40 }} />
 
         {/* Quick Links */}
-        <section style={{ textAlign: 'center' }}>
+        <section style={{ textAlign: 'center', borderTop: '2px solid #fff', paddingTop: 40 }}>
           <h2>Quick Links</h2>
           <nav>
             <a href="/about">About</a> | <a href="/projects">Projects</a> | <a href="/skills">Skills</a> | <a href="/contact">Contact</a>
@@ -51,7 +51,7 @@ export default function Home() {
         </section>
 
         {/* Experience */}
-        <section style={{ textAlign: 'center', marginTop: 40 }}>
+        <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #fff', paddingTop: 40 }}>
           <h2>Experience</h2>
           <ul style={{ listStyle: 'none', padding: 0 }}>
             <li>
@@ -63,7 +63,7 @@ export default function Home() {
         </section>
 
         {/* Education */}
-        <section style={{ textAlign: 'center', marginTop: 40 }}>
+        <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #fff', paddingTop: 40 }}>
           <h2>Education</h2>
           <ul style={{ listStyle: 'none', padding: 0 }}>
             <li>
@@ -74,7 +74,7 @@ export default function Home() {
         </section>
 
         {/* Certifications */}
-        <section style={{ textAlign: 'center', marginTop: 40 }}>
+        <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #fff', paddingTop: 40 }}>
           <h2>Certifications</h2>
           <ul style={{ listStyle: 'none', padding: 0 }}>
             <li>
@@ -84,7 +84,7 @@ export default function Home() {
         </section>
 
         {/* Contact */}
-        <section style={{ textAlign: 'center', marginTop: 40, marginBottom: 40 }}>
+        <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #fff', paddingTop: 40, marginBottom: 40 }}>
           <h2>Contact</h2>
           <p>You can reach me at <a href="mailto:your@email.com">your@email.com</a> or fill out the form below (dummy form):</p>
           <form style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1rem', maxWidth: 400, marginLeft: 'auto', marginRight: 'auto' }}>
