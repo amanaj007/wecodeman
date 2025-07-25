@@ -8,7 +8,9 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main} style={{ width: '70%' }}>
         <section style={{ textAlign: 'center', paddingTop: 40 }}>
-          
+          <a href="/" >
+            <Image src="/logo.jpeg" alt="Site Logo" width={350} height={120} style={{ objectFit: 'cover', marginBottom: 16 }} />
+          </a>
           <h1>Aman Jaiswal</h1>
           <p>Front-End Developer (Vue.js/React.js)</p>
           <p>Location: Korba, Chhattisgarh, India</p>
