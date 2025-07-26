@@ -39,9 +39,9 @@ export default function ProjectsSection() {
           <div key={project.name} style={{
             width: 260, border: '1px solid #eee', borderRadius: 12, boxShadow: '0 2px 8px #0001', padding: 16, background: '#fff', textAlign: 'center'
           }}>
-            <img src={project.img} alt={project.name} style={{ width: '100%', height: 120, objectFit: 'contain', borderRadius: 8, marginBottom: 12 }} />
-            <h3>{project.name}</h3>
-            <p style={{ fontSize: 14 }}>{project.description}</p>
+            <img src={project.img} alt={project.name} style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: 8,  }} />
+            {/* <h3>{project.name}</h3>
+            <p style={{ fontSize: 14 }}>{project.description}</p> */}
           </div>
         ))}
       </div>

@@ -30,7 +30,7 @@ export default function Home() {
         </section>
 
         {/* Technical Skills */}
-        <section style={{ textAlign: 'center', borderTop: '2px solid #fff', paddingTop: 40 }}>
+        {/* <section style={{ textAlign: 'center', borderTop: '2px solid #fff', paddingTop: 40 }}>
           <h2>Technical Skills</h2>
           <ul style={{ listStyle: 'none' }}>
             <li><b>Languages:</b> JavaScript (ES6+), HTML5, CSS3</li>
@@ -39,10 +39,9 @@ export default function Home() {
             <li><b>Backend & DB:</b> Node.js, MongoDB, MySQL, Mongoose</li>
             <li><b>Tools:</b> Visual Studio Code, Git, Gitlab, Jira, BitBucket</li>
           </ul>
-        </section>
-
-        <ProjectsSection style={{ borderTop: '2px solid #fff', paddingTop: 40 }} />
+        </section> */}
         <SkillsSection style={{ borderTop: '2px solid #fff', paddingTop: 40 }} />
+        <ProjectsSection style={{ borderTop: '2px solid #fff', paddingTop: 40 }} />
 
         {/* Quick Links */}
         <section style={{ textAlign: 'center', borderTop: '2px solid #fff', paddingTop: 40 }}>
