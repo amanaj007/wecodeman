@@ -1,0 +1,49 @@
+.skillsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skillItem {
+  text-align: center;
+  width: 120px;
+}
+
+.skillImage {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .skillsGrid {
+    gap: 1.5rem;
+  }
+  
+  .skillItem {
+    width: 100px;
+  }
+  
+  .skillImage {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skillsGrid {
+    gap: 1rem;
+  }
+  
+  .skillItem {
+    width: 80px;
+  }
+  
+  .skillImage {
+    width: 48px;
+    height: 48px;
+  }
+} 

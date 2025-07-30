@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./SkillsSection.module.css";
 
 const skills = [
   { name: 'JavaScript', img: '/skills/js.png' },
@@ -17,12 +18,10 @@ export default function SkillsSection() {
   return (
     <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #fff', paddingTop: 40 }}>
       <h2 style={{ borderBottom: '2px solid #fff', display: 'inline-block' }}>Skills & Tech Stack</h2>
-      <div style={{
-        display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2rem', marginTop: '2rem'
-      }}>
+      <div className={styles.skillsGrid}>
         {skills.map(skill => (
-          <div key={skill.name} style={{ textAlign: 'center', width: 120 }}>
-            <img src={skill.img} alt={skill.name} style={{ width: 64, height: 64, objectFit: 'contain', marginBottom: 8 }} />
+          <div key={skill.name} className={styles.skillItem}>
+            <img src={skill.img} alt={skill.name} className={styles.skillImage} />
             <div>{skill.name}</div>
           </div>
         ))}

@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
+        suppressHydrationWarning={true}
         className={`${geistSans.variable} ${geistMono.variable}`}
         style={{ minHeight: "100vh", background: "#09090b", color: "#fff" }}
       >

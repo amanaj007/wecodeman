@@ -6,10 +6,20 @@ import SkillsSection from "./components/SkillsSection";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main className={styles.main} style={{ width: '70%' }}>
+      <main className={styles.main}>
         <section style={{ textAlign: 'center' }}>
           <a href="/" >
-            <Image src="/logo.jpeg" alt="Site Logo" width={350} height={120} style={{ objectFit: 'cover', marginBottom: 16 }} />
+            <Image 
+              src="/logo.jpeg" 
+              alt="Site Logo" 
+              width={350} 
+              height={120} 
+              style={{ 
+                objectFit: 'cover', 
+                marginBottom: 16,
+                maxWidth: '100%',
+              }} 
+            />
           </a>
           <h1>Aman Jaiswal</h1>
           <p>Front-End Developer (Vue.js/React.js)</p>
@@ -54,51 +64,61 @@ export default function Home() {
         {/* Experience */}
         <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #fff', paddingTop: 40 }}>
           <h2 style={{ borderBottom: '2px solid #fff', display: 'inline-block' }}>Experience</h2>
-          <ul style={{ listStyle: 'none', padding: 0 }}>
+          <ul className={styles.experienceList}>
             <li style={{ marginBottom: '2rem' }}>
               <b>Front End Developer</b> at Workspectation<br />
               January 2025 – Present<br />
               <i>Remote – Goa, India</i><br />
-              • Refactored and optimized legacy Vue.js codebase to improve modularity and maintainability.<br />
+              {/* • Refactored and optimized legacy Vue.js codebase to improve modularity and maintainability.<br />
               • Eliminated redundant API calls and ensured only required endpoints were triggered, reducing API traffic by 35% and boosting performance.<br />
-              • Collaborated closely with the backend and design teams in an Agile environment to deliver consistent and scalable UI components.
+              • Collaborated closely with the backend and design teams in an Agile environment to deliver consistent and scalable UI components. */}
             </li>
             <li style={{ marginBottom: '2rem' }}>
               <b>Vue.js Developer</b> at Yunesg Ind<br />
               September 2023 – April 2024<br />
               <i>Remote – Salem, Tamil Nadu, India</i><br />
-              • Built and maintained interactive dashboards and forms using Vue.js and Tailwind CSS, improving user engagement and accessibility.<br />
-              • Optimized frontend architecture by restructuring components and reducing re-renders, leading to a 55% improvement in overall page performance.
+              {/* • Built and maintained interactive dashboards and forms using Vue.js and Tailwind CSS, improving user engagement and accessibility.<br />
+              • Optimized frontend architecture by restructuring components and reducing re-renders, leading to a 55% improvement in overall page performance. */}
             </li>
             <li style={{ marginBottom: '2rem' }}>
               <b>Full Stack Developer</b> at Adroweb IT Services Private Limited<br />
               August 2022 – August 2023<br />
               <i>Remote – Raipur, Chhattisgarh, India</i><br />
-              • Delivered 5+ full-stack web applications using Vue.js, Node.js, and MongoDB.<br />
-              • Designed reusable components and integrated REST APIs for dynamic data loading.
+              {/* • Delivered 5+ full-stack web applications using Vue.js, Node.js, and MongoDB.<br />
+              • Designed reusable components and integrated REST APIs for dynamic data loading. */}
             </li>
             <li style={{ marginBottom: '2rem' }}>
               <b>Front End Developer</b> at Miko.ai<br />
               June 2022 – July 2022<br />
               <i>Mumbai, Maharashtra, India</i><br />
-              • Added pagination and performance improvements to existing features.<br />
-              • Removed redundant code, reducing bundle size by 10%.
+              {/* • Added pagination and performance improvements to existing features.<br />
+              • Removed redundant code, reducing bundle size by 10%. */}
             </li>
-            {/* <li style={{ marginBottom: '2rem' }}>
+            <li style={{ marginBottom: '2rem' }}>
               <b>Full Stack Developer</b> at Chartered Engineering<br />
               April 2019 – May 2022<br />
               <i>Raipur, Chhattisgarh, India</i><br />
-              • Built internal tools and portals using MVC frameworks (Node.js).<br />
+              {/* • Built internal tools and portals using MVC frameworks (Node.js).<br />
               • Debugged and resolved backend issues, resulting in 30% fewer runtime errors.<br />
-              • Improved system stability and delivery speed for internal users.
-            </li> */}
+              • Improved system stability and delivery speed for internal users. */}
+            </li>
+            <li style={{ marginBottom: '2rem' }}>
+              <b>Administrative Assistant</b> at EDUKUL SOLUTIONS PRIVATE LIMITED<br />
+              September 2018 – January 2019<br />
+              <i>Mumbai Metropolitan Region</i>
+            </li>
+            <li style={{ marginBottom: '2rem' }}>
+              <b>Accountant</b> at Khanduja and Associates<br />
+              February 2018 – August 2018<br />
+              <i>Bilaspur, Chhattisgarh, India</i>
+            </li>
           </ul>
         </section>
 
         {/* Education */}
         <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #fff', paddingTop: 40 }}>
           <h2 style={{ borderBottom: '2px solid #fff', display: 'inline-block' }}>Education</h2>
-          <ul style={{ listStyle: 'none', padding: 0 }}>
+          <ul className={styles.educationList}>
             <li style={{ marginBottom: '1.5rem' }}>
               <b>Master of Computer Applications</b><br />
               Manipal Academy of Higher Education<br />
@@ -116,7 +136,7 @@ export default function Home() {
         {/* Certifications */}
         <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #fff', paddingTop: 40 }}>
           <h2 style={{ borderBottom: '2px solid #fff', display: 'inline-block' }}>Certifications</h2>
-          <ul style={{ listStyle: 'none', padding: 0 }}>
+          <ul className={styles.certificationsList}>
             <li style={{ marginBottom: '0.5rem' }}>
               <b>The Complete Web Development Bootcamp</b>
             </li>

@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./ProjectsSection.module.css";
 
 const projects = [
   {
@@ -46,19 +47,15 @@ export default function ProjectsSection() {
   return (
     <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #fff', paddingTop: 40 }}>
       <h2 style={{ borderBottom: '2px solid #fff', display: 'inline-block' }}>Projects</h2>
-      <div style={{
-        display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2rem', marginTop: '2rem'
-      }}>
+      <div className={styles.projectsGrid}>
         {projects.map(project => (
-          <div key={project.name} style={{
-            width: 260, border: '1px solid #eee', borderRadius: 12, boxShadow: '0 2px 8px #0001', padding: 16, background: '#fff', textAlign: 'center'
-          }}>
+          <div key={project.name} className={styles.projectCard}>
             {project.link ? (
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <img src={project.img} alt={project.name} style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: 8, cursor: 'pointer' }} />
+                <img src={project.img} alt={project.name} className={styles.projectImage} />
               </a>
             ) : (
-              <img src={project.img} alt={project.name} style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: 8 }} />
+              <img src={project.img} alt={project.name} className={styles.projectImageNoLink} />
             )}
           </div>
         ))}
