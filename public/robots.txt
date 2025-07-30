@@ -1,9 +1,8 @@
-# *
 User-agent: *
 Allow: /
 
-# Host
-Host: https://wecodeman.com
-
-# Sitemaps
+# Sitemap
 Sitemap: https://wecodeman.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
