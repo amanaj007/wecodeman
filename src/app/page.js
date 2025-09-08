@@ -57,7 +57,7 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <section style={{ textAlign: 'center' }}>
-          <a href="/" >
+          {/* <a href="/" >
             <Image 
               src="/logo.jpeg" 
               alt="Site Logo" 
@@ -69,9 +69,9 @@ export default function Home() {
                 maxWidth: '100%',
               }} 
             />
-          </a>
+          </a> */}
           <h1>Aman Jaiswal</h1>
-          <p>Front-End Developer (Vue.js/React.js)</p>
+          <p>Front-End Developer & Web Consultant</p>
           <p style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
             <LocationIcon />
             Korba, Chhattisgarh, India
@@ -97,10 +97,12 @@ export default function Home() {
         </section>
 
         {/* Summary */}
-        <section style={{ textAlign: 'center', margin: '0 auto', borderTop: '2px solid #fff', paddingTop: 40 }}>
-          <h2 style={{ borderBottom: '2px solid #fff', display: 'inline-block' }}>About Me</h2>
+        <section style={{ textAlign: 'center', margin: '0 auto', borderTop: '2px solid #000000', paddingTop: 40 }}>
+          <h2 style={{ borderBottom: '2px solid #000000', display: 'inline-block' }}>About Me</h2>
           <p>
-            Passionate front-end developer with 5+ years of experience building responsive, user-focused web applications. Adept at optimizing performance, collaborating with cross-functional teams, and delivering intuitive UI experiences.
+            I’m a problem solver at heart and a web developer by trade. 
+            Over the past 5+ years, I’ve helped businesses turn ideas into easy-to-use websites and applications that actually work for their customers. 
+            My focus is on making technology simple, reliable, and effective - whether that means improving performance, creating smooth user experiences, or guiding teams on the right approach. In short, I make the web work better for your business.
           </p>
         </section>
 
@@ -115,8 +117,8 @@ export default function Home() {
             <li><b>Tools:</b> Visual Studio Code, Git, Gitlab, Jira, BitBucket</li>
           </ul>
         </section> */}
-        <SkillsSection style={{ borderTop: '2px solid #fff', paddingTop: 40 }} />
-        <ProjectsSection style={{ borderTop: '2px solid #fff', paddingTop: 40 }} />
+        <SkillsSection style={{ borderTop: '2px solid #000000', paddingTop: 40 }} />
+        <ProjectsSection style={{ borderTop: '2px solid #000000', paddingTop: 40 }} />
 
         {/* Quick Links */}
         {/* <section style={{ textAlign: 'center', borderTop: '2px solid #fff', paddingTop: 40 }}>
@@ -127,8 +129,8 @@ export default function Home() {
         </section> */}
 
         {/* Experience */}
-        <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #fff', paddingTop: 40 }}>
-          <h2 style={{ borderBottom: '2px solid #fff', display: 'inline-block' }}>
+        <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #000000', paddingTop: 40 }}>
+          <h2 style={{ borderBottom: '2px solid #000000', display: 'inline-block' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
               <ExperienceIcon />
               Experience
@@ -186,8 +188,8 @@ export default function Home() {
         </section>
 
         {/* Education */}
-        <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #fff', paddingTop: 40 }}>
-          <h2 style={{ borderBottom: '2px solid #fff', display: 'inline-block' }}>
+        <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #000000', paddingTop: 40 }}>
+          <h2 style={{ borderBottom: '2px solid #000000', display: 'inline-block' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
               <EducationIcon />
               Education
@@ -209,8 +211,8 @@ export default function Home() {
         </section>
 
         {/* Certifications */}
-        <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #fff', paddingTop: 40 }}>
-          <h2 style={{ borderBottom: '2px solid #fff', display: 'inline-block' }}>
+        <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #000000', paddingTop: 40 }}>
+          <h2 style={{ borderBottom: '2px solid #000000', display: 'inline-block' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
               <CertificationIcon />
               Certifications

@@ -45,8 +45,8 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #fff', paddingTop: 40 }}>
-      <h2 style={{ borderBottom: '2px solid #fff', display: 'inline-block' }}>Projects</h2>
+    <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #000000', paddingTop: 40 }}>
+      <h2 style={{ borderBottom: '2px solid #000000', display: 'inline-block' }}>Projects</h2>
       <div className={styles.projectsGrid}>
         {projects.map(project => (
           <div key={project.name} className={styles.projectCard}>

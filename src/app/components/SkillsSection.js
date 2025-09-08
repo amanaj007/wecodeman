@@ -16,8 +16,8 @@ const skills = [
 
 export default function SkillsSection() {
   return (
-    <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #fff', paddingTop: 40 }}>
-      <h2 style={{ borderBottom: '2px solid #fff', display: 'inline-block' }}>Skills & Tech Stack</h2>
+    <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #000000', paddingTop: 40 }}>
+      <h2 style={{ borderBottom: '2px solid #000000', display: 'inline-block' }}>Skills & Tech Stack</h2>
       <div className={styles.skillsGrid}>
         {skills.map(skill => (
           <div key={skill.name} className={styles.skillItem}>
