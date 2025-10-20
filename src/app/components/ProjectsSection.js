@@ -26,11 +26,11 @@ const projects = [
     description: 'This is a placeholder for another project. Replace with your real project details.',
     link: 'https://resolva.com.au/'
   },
-  {
-    name: 'LMS for DGZfP',
-    img: '/projects/dgzfp.webp',
-    description: 'Rebuilt performance-critical components, improving load times by 40%. Refactored application structure for maintainability. Agile team collaboration.'
-  },
+  // {
+  //   name: 'LMS for DGZfP',
+  //   img: '/projects/dgzfp.webp',
+  //   description: 'Rebuilt performance-critical components, improving load times by 40%. Refactored application structure for maintainability. Agile team collaboration.'
+  // },
   // {
   //   name: 'Devshree',
   //   img: '/projects/devshree.png',
