@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ProjectsSection.module.css";
 
-const projects = [
+export const projects = [
   {
     name: 'PEPassport',
     img: '/projects/pepassport.png',
@@ -45,7 +45,7 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #000000', paddingTop: 40 }}>
+    <section id="projects" style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #000000', paddingTop: 40 }}>
       <h2 style={{ borderBottom: '2px solid #000000', display: 'inline-block' }}>Projects</h2>
       <div className={styles.projectsGrid}>
         {projects.map(project => (

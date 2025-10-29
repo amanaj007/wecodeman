@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import ProjectsSection from "./components/ProjectsSection";
+import ProjectsSection, { projects } from "./components/ProjectsSection";
 import SkillsSection from "./components/SkillsSection";
 
 // Icons
@@ -57,6 +57,14 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <section style={{ textAlign: 'center' }}>
+          <nav style={{ display: 'flex', justifyContent: 'center', gap: '16px', marginBottom: 16 }}>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#certifications">Certifications</a>
+          </nav>
           {/* <a href="/" >
             <Image 
               src="/logo.jpeg" 
@@ -97,7 +105,7 @@ export default function Home() {
         </section>
 
         {/* Summary */}
-        <section style={{ textAlign: 'center', margin: '0 auto', borderTop: '2px solid #000000', paddingTop: 40 }}>
+        <section id="about" style={{ textAlign: 'center', margin: '0 auto', borderTop: '2px solid #000000', paddingTop: 40 }}>
           <h2 style={{ borderBottom: '2px solid #000000', display: 'inline-block' }}>About Me</h2>
           <p>
             I’m a problem solver at heart and a web developer by trade. 
@@ -117,7 +125,9 @@ export default function Home() {
             <li><b>Tools:</b> Visual Studio Code, Git, Gitlab, Jira, BitBucket</li>
           </ul>
         </section> */}
-        <SkillsSection style={{ borderTop: '2px solid #000000', paddingTop: 40 }} />
+        <section id="skills">
+          <SkillsSection style={{ borderTop: '2px solid #000000', paddingTop: 40 }} />
+        </section>
         <ProjectsSection style={{ borderTop: '2px solid #000000', paddingTop: 40 }} />
 
         {/* Quick Links */}
@@ -129,7 +139,7 @@ export default function Home() {
         </section> */}
 
         {/* Experience */}
-        <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #000000', paddingTop: 40 }}>
+        <section id="experience" style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #000000', paddingTop: 40 }}>
           <h2 style={{ borderBottom: '2px solid #000000', display: 'inline-block' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
               <ExperienceIcon />
@@ -188,7 +198,7 @@ export default function Home() {
         </section>
 
         {/* Education */}
-        <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #000000', paddingTop: 40 }}>
+        <section id="education" style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #000000', paddingTop: 40 }}>
           <h2 style={{ borderBottom: '2px solid #000000', display: 'inline-block' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
               <EducationIcon />
@@ -211,7 +221,7 @@ export default function Home() {
         </section>
 
         {/* Certifications */}
-        <section style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #000000', paddingTop: 40 }}>
+        <section id="certifications" style={{ textAlign: 'center', marginTop: 40, borderTop: '2px solid #000000', paddingTop: 40 }}>
           <h2 style={{ borderBottom: '2px solid #000000', display: 'inline-block' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
               <CertificationIcon />
@@ -228,6 +238,27 @@ export default function Home() {
           </ul>
         </section>
 
+        {/* Projects JSON-LD for richer snippets */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              "itemListElement": projects.map((p, index) => ({
+                "@type": "ListItem",
+                "position": index + 1,
+                "item": {
+                  "@type": "CreativeWork",
+                  "name": p.name,
+                  ...(p.link ? { "url": p.link } : {}),
+                  ...(p.img ? { "image": `https://wecodeman.com${p.img}` } : {}),
+                  ...(p.description ? { "description": p.description } : {})
+                }
+              }))
+            })
+          }}
+        />
       </main>
     </div>
   );
