@@ -57,14 +57,14 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <section style={{ textAlign: 'center' }}>
-          <nav style={{ display: 'flex', justifyContent: 'center', gap: '16px', marginBottom: 16 }}>
+          {/* <nav style={{ display: 'flex', justifyContent: 'center', gap: '16px', marginBottom: 16 }}>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
             <a href="#education">Education</a>
             <a href="#certifications">Certifications</a>
-          </nav>
+          </nav> */}
           {/* <a href="/" >
             <Image 
               src="/logo.jpeg" 
